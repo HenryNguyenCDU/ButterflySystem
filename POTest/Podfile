@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+ platform :ios, '11.0'
+
+target 'POTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for POTest
+    pod 'AFNetworking', '~> 4.0.1'
+    pod 'MBProgressHUD', '~> 1.2.0'
+    pod 'FMDB'
+   # pod 'FMDB/FTS'   # FMDB with FTS
+   # pod 'FMDB/standalone'   # FMDB with latest SQLite amalgamation source
+   # pod 'FMDB/standalone/FTS'   # FMDB with latest SQLite amalgamation source and FTS
+    pod 'FMDB/SQLCipher'   # FMDB with SQLCipher
+
+  target 'POTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+
+end
+
